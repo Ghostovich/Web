@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 1920px;
+  height: 700px;
+}
+
+.header {
+  margin-top: 40px;
+  margin-bottom: 84px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+}
+
+.menu {
+  width: 533px;
+  height: 17px;
+}
+
+.menu__item {
+  color: #000;
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.home {
+  color: #f25822;
+  font-family: Gilroy-SemiBold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.heading {
+  margin-bottom: 17px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 522px;
+  height: 222px;
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 41px;
+}
+
+.p__text {
+  margin-bottom: 37px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 466px;
+  height: 48px;
+  color: #888;
+  font-family: Gilroy-Medium;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.buttons {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 72px;
+  gap: 72px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.start {
+  border-radius: 50px;
+  background: #f25822;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Gilroy-Bold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch {
+  color: #aaa;
+  font-family: Gilroy-Bold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.img {
+  width: 544.814px;
+  height: 374.843px;
+}
+
+.footer {
+  margin-top: 97px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  width: 1920px;
+  height: 243px;
+  align-items: center;
+  align-content: center;
+}
