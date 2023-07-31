@@ -3,13 +3,7 @@
   padding: 0;
 }
 
-.page {
-  width: 1600px;
-  height: 2925px;
-}
-
 .header {
-  width: 1600px;
   height: 75px;
   background-color: #222;
   display: flex;
@@ -74,7 +68,6 @@
 
 .h1__top {
   width: 377px;
-  height: 93px;
   color: #222;
   font-family: Lato;
   font-size: 48px;
@@ -255,6 +248,15 @@
   height: 420px;
 }
 
+.img__c2 {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.img__c2:hover {
+   
+}
+
 .p__end__c2 {
   color: #f26376;
   font-family: Lato;
@@ -269,4 +271,112 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    gap: 424px;
+  }
+
+  .top {
+    gap: 39px;
+  }
+
+  .h1__top {
+    font-size: 44px;
+  }
+
+  .word1 {
+    font-size: 24px;
+  }
+  .word2 {
+    font-size: 24px;
+  }
+
+  .img__top {
+    width: 386px;
+    height: 368px;
+  }
+
+  .content1 {
+    gap: 20px;
+    grid-template-columns: 231px;
+    margin-bottom: 96px;
+  }
+
+  .block1 {
+    background: url(img/1.png) no-repeat;
+    width: 231px;
+    height: 167px;
+    background-size: 100% auto;
+  }
+
+  .block2 {
+    width: 231px;
+    height: 167px;
+    background: url(img/2.jpg) no-repeat;
+    background-size: 100% auto;
+  }
+
+  .block3 {
+    width: 231px;
+    height: 167px;
+    background: url(img/3.jpg) no-repeat;
+    background-size: 100% auto;
+  }
+
+  .block4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: url(img/4.png) no-repeat;
+    width: 734px;
+    height: 116px;
+    background-size: 100% auto;
+  }
+
+  .p__content1 {
+    margin-top: 58px;
+    margin-left: 60px;
+  }
+
+  .p__content1__1 {
+    width: 153px;
+    height: 50px;
+  }
+
+  .p__content1__3 {
+    width: 115px;
+  }
+
+  .h3__content2 {
+    margin-bottom: 3px;
+  }
+
+  .p__content2 {
+    margin-bottom: 74px;
+  }
+
+  .blocks__content2 {
+    grid-template-columns: 360px 360px;
+    gap: 16px;
+  }
+
+  .p__c2 {
+    margin-top: 12px;
+    margin-left: 16px;
+  }
+
+  .p__main__c2 {
+    margin-left: 16px;
+  }
+
+  .p__price {
+    margin-left: 16px;
+  }
+
+  .p__end__c2 {
+    margin-bottom: 71px;
+  }
 }
