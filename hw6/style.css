@@ -237,6 +237,15 @@
   margin-top: 16px;
 }
 
+/* .img__c2 {
+  transition: 0.3s;
+} */
+
+.img__c2:hover::after{
+  fill: rgba(58, 56, 56, 0.86);
+  content: "Add to Cart";
+}
+
 .img2__c2 {
   margin-left: 108px;
   background-color: #f7e4e2;
@@ -329,9 +338,8 @@
 .bg__main__footer {
   opacity: 0.6;
   position: absolute;
-  height: 100%  ;
+  height: 100%;
   width: 100%;
-  
 }
 
 .div__main__footer1,
@@ -482,18 +490,11 @@ button {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
+  transition: 0.3s;
 }
 
-.div__img__div__down__footer2 {
+.div__img__div__down__footer:hover {
   background: url(img/Rectangle\ 15.svg);
-  height: 32px;
-  width: 32px;
-  align-content: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 @media (max-width: 1024px) {
@@ -622,20 +623,19 @@ button {
     margin-bottom: 64px;
   }
 
-  .main__footer{
+  .main__footer {
     flex-direction: column;
   }
 
-  .div__main__footer1{
+  .div__main__footer1 {
     margin-top: 64px;
     margin-bottom: 48px;
   }
 
-  .div__main__footer2{
+  .div__main__footer2 {
     margin-top: 0px;
     margin-bottom: 140px;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -737,12 +737,11 @@ button {
     margin-top: 40px;
   }
 
-.div__top__footer3{
-  margin-bottom: 81px;
-}
+  .div__top__footer3 {
+    margin-bottom: 81px;
+  }
 
-.div__main__footer2{
-  margin-bottom: 109px;
-}
-
+  .div__main__footer2 {
+    margin-bottom: 109px;
+  }
 }
