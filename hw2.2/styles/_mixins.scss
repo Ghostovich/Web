@@ -1,0 +1,10 @@
+@mixin container {
+  padding-left: calc(50%-$widthSite / 2);
+  padding-right: calc(50%-$widthSite / 2);
+}
+
+%siteFont {
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+}

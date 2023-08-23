@@ -1,0 +1,41 @@
+.breadcrumbs{
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #F8F3F4;
+}
+
+
+.h3__breadcrumbs{
+  margin-top: 60px;
+    margin-bottom: 60px;
+    color:$colorSite;
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.p__breadcrumbs{
+  color: #636363;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+
+}
+
+.span__p__breadcrumbs{
+  color: $colorSite;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
