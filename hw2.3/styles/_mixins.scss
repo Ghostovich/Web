@@ -1,8 +1,6 @@
 @mixin container {
   padding-left: calc(50% - $widthSite / 2);
   padding-right: calc(50% - $widthSite / 2);
-  display: flex;
-  align-content: space-between;
 }
 
 %siteFont {

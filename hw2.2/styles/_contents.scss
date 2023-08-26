@@ -65,9 +65,8 @@
     position: absolute;
     &[open] .item__summary {
       color: $colorSite;
+      list-style-type: none;
     }
-  
-    
   }
 
   &__sorting {
@@ -75,6 +74,10 @@
     display: flex;
     gap: 27px;
   }
+}
+
+.item__summary {
+  list-style-type: none;
 }
 
 .blocks__content2 {
