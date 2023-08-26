@@ -1,0 +1,84 @@
+.contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 145px;
+}
+
+.form {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 300;
+
+  &__input {
+    width: 360px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0 20px;
+  }
+
+&__sex{
+  display: flex;
+  gap: 20px;
+}
+
+&__radio{
+  display: flex;
+gap: 10px;
+}
+
+  &__clue {
+    font-size: 13px;
+    font-weight: 300;
+    color: #b1b1b1;
+  }
+
+  &__confirm {
+    width: 273px;
+    height: 50px;
+    background: $colorSite;
+    margin-left: 44px;
+    color: white;
+    border: none;
+    transition: 0.3;
+    margin-bottom: 96px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__confirm:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+  &__confirm:hover path {
+    fill: black;
+    color: black;
+    border: 1px solid black;
+  }
+
+  &__discription {
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-top: -200px;
+  }
+}
+
+li {
+  padding-left: 2rem;
+  background-image: url(/hw2.4/img/Vector.svg);
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+  list-style-type: none;
+}

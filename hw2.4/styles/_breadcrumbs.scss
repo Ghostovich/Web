@@ -1,0 +1,18 @@
+.breadcrumbs {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f8f3f4;
+  &__heading {
+    color: $colorSite;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 230px;
+    transition: 0.3;
+  }
+  &__heading:hover {
+    color: black;
+  }
+}
