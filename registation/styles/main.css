@@ -6,6 +6,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -30,13 +31,71 @@
   gap: 25px;
   align-items: center;
 }
-.nav__menu:hover path {
-  fill: #F16D7F;
-}
 .nav__cabinet:hover path {
   fill: #F16D7F;
 }
 .nav__basket:hover path {
+  fill: #F16D7F;
+}
+
+.menu {
+  width: 232px;
+  padding: 32px;
+  background: #fff;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  transition: right 0.3s;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.menu__li {
+  list-style-type: none;
+}
+.menu__link {
+  color: #6f6e6e;
+  padding-left: 22px;
+}
+.menu__link:hover {
+  color: #F16D7F;
+}
+.menu__link__main {
+  display: flex;
+  gap: 114px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+.menu__link__main:hover {
+  color: #F16D7F;
+}
+.menu__link__heading {
+  color: #F16D7F;
+}
+.menu__link__heading:hover {
+  color: black;
+}
+.menu__close:hover path {
+  fill: #F16D7F;
+}
+
+#burger {
+  position: absolute;
+  left: -9999999999px;
+  visibility: hidden;
+}
+#burger:checked ~ .menu {
+  right: -232px;
+}
+
+.burger__label:hover path {
   fill: #F16D7F;
 }
 
@@ -53,6 +112,7 @@
   font-weight: 400;
   line-height: normal;
   transition: 0.3;
+  width: 194px;
 }
 .breadcrumbs__heading:hover {
   color: black;
@@ -128,10 +188,9 @@
   flex-direction: column;
   margin-top: -200px;
 }
-
-li {
+.form__li {
   padding-left: 2rem;
-  background-image: url(/hw2.4/img/Vector.svg);
+  background-image: url(/registation/img/Vector.svg);
   background-size: 20px 16px;
   background-repeat: no-repeat;
   list-style-type: none;
@@ -254,7 +313,7 @@ li {
   height: 100%;
   z-index: 1;
   opacity: 0.7;
-  background: url(/hw2.4/img/Layer\ 41.png) no-repeat;
+  background: url(/registation/img/Layer\ 41.png) no-repeat;
   background-size: cover;
 }
 .footer__down {
@@ -314,4 +373,8 @@ li {
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
+}
+
+.body {
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

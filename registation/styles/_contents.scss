@@ -25,15 +25,15 @@
     padding: 0 20px;
   }
 
-&__sex{
-  display: flex;
-  gap: 20px;
-}
+  &__sex {
+    display: flex;
+    gap: 20px;
+  }
 
-&__radio{
-  display: flex;
-gap: 10px;
-}
+  &__radio {
+    display: flex;
+    gap: 10px;
+  }
 
   &__clue {
     font-size: 13px;
@@ -73,12 +73,12 @@ gap: 10px;
     flex-direction: column;
     margin-top: -200px;
   }
-}
 
-li {
-  padding-left: 2rem;
-  background-image: url(/hw2.4/img/Vector.svg);
-  background-size: 20px 16px;
-  background-repeat: no-repeat;
-  list-style-type: none;
+  &__li {
+    padding-left: 2rem;
+    background-image: url(/registation/img/Vector.svg);
+    background-size: 20px 16px;
+    background-repeat: no-repeat;
+    list-style-type: none;
+  }
 }

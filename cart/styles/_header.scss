@@ -1,76 +1,117 @@
-
 .header {
   height: 75px;
   background-color: #222;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-.logo__block {
+.logo {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 41px;
-}
-
-.img1 {
-  width: 44px;
-  height: 38px;
-}
-
-.img2 {
-  width: 26.002px;
-  height: 26.792px;
-}
-
-.img3 {
-  width: 158.996px;
-  height: 29px;
-}
-
-
-.a__header4 {
-  display: none;
-}
-
-
-
-@media (max-width: 1024px) {
-  .header {
-    gap: 424px;
+  &__label:hover {
+    transition: 0.3;
+    opacity: 0.7;
   }
-
-  .p__end__c2 {
-    margin-bottom: 71px;
-  }
-
-  .a__header4 {
-    display: none;
+  &__search:hover path {
+    fill: $colorSite;
+    transition: 0.3;
   }
 }
 
-@media (max-width: 767px) {
-  .header {
-    justify-content: space-between;
-    gap: 0px;
+.nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+
+  // &__menu:hover path {
+  //   fill: $colorSite;
+  // }
+  &__cabinet:hover path {
+    fill: $colorSite;
   }
 
-  .a__header3 {
-    display: none;
+  &__basket:hover path {
+    fill: $colorSite;
   }
-
-  .a__header4 {
-    display: block;
-    margin-right: 16px;
-  }
-
-  .logo__block {
-    margin-left: 10px;
-  }
-
 }
+
+.menu {
+  width: 232px;
+  // при адаптиве 100%
+  padding: 32px;
+  background: #fff;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  transition: right 0.3s;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  &__li {
+    list-style-type: none;
+  }
+
+  &__link {
+    color: #6f6e6e;
+    padding-left: 22px;
+  }
+
+  &__link:hover {
+    color: $colorSite;
+  }
+
+
+  &__link__main {
+    display: flex;
+    gap: 114px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__link__main:hover{
+    color: $colorSite;
+  }
+  
+  &__link__heading {
+    color: $colorSite;
+  }
+
+  &__link__heading:hover{
+    color: black;
+  }
+
+  &__close:hover path {
+    fill: $colorSite;
+  }
+}
+
+#burger {
+  position: absolute;
+  left: -9999999999px;
+  visibility: hidden;
+  &:checked ~ .menu {
+    right: -232px;
+  }
+}
+
+.burger__label:hover path {
+  fill: $colorSite;
+}
+
