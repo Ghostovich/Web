@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.logo {
+.logo__block {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -16,30 +16,53 @@
   align-items: center;
   gap: 41px;
 }
-.logo__label:hover {
-  transition: 0.3;
-  opacity: 0.7;
-}
-.logo__search:hover path {
-  fill: #F16D7F;
-  transition: 0.3;
+
+.img1 {
+  width: 44px;
+  height: 38px;
 }
 
-.nav {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-.nav__menu:hover path {
-  fill: #F16D7F;
-}
-.nav__cabinet:hover path {
-  fill: #F16D7F;
-}
-.nav__basket:hover path {
-  fill: #F16D7F;
+.img2 {
+  width: 26.002px;
+  height: 26.792px;
 }
 
+.img3 {
+  width: 158.996px;
+  height: 29px;
+}
+
+.a__header4 {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    gap: 424px;
+  }
+  .p__end__c2 {
+    margin-bottom: 71px;
+  }
+  .a__header4 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .a__header3 {
+    display: none;
+  }
+  .a__header4 {
+    display: block;
+    margin-right: 16px;
+  }
+  .logo__block {
+    margin-left: 10px;
+  }
+}
 .breadcrumbs {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -69,11 +92,91 @@
   gap: 145px;
 }
 
+.cart {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cart__block {
+  display: flex;
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  width: 652px;
+  height: 306px;
+  gap: 32px;
+}
+.cart__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart__heading {
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  gap: 57px;
+  align-items: center;
+  padding-right: 22px;
+  transition: 0.3;
+}
+.cart__head:hover {
+  color: #F16D7F;
+}
+.cart__close:hover path {
+  fill: #F16D7F;
+}
+.cart__description {
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 62px;
+}
+.cart__price {
+  color: #F16D7F;
+}
+.cart__input {
+  width: 44px;
+  height: 25px;
+  text-align: center;
+}
+.cart__buttons {
+  margin-top: 32px;
+  display: flex;
+  gap: 192px;
+}
+.cart__button {
+  border: 1px solid #a4a4a4;
+  margin-bottom: 128px;
+  transition: 0.3;
+  width: 225px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart__button:hover {
+  color: white;
+  background-color: #F16D7F;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .form {
-  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+  margin-top: -200px;
+}
+.form__formalization {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.form__heading {
   font-size: 16px;
   font-weight: 300;
 }
@@ -84,18 +187,47 @@
   font-weight: 300;
   padding: 0 20px;
 }
-.form__sex {
-  display: flex;
-  gap: 20px;
-}
-.form__radio {
-  display: flex;
-  gap: 10px;
-}
-.form__clue {
-  font-size: 13px;
+.form__button {
+  border: 1px solid rgba(170, 68, 170, 0.2666666667);
+  font-size: 11px;
   font-weight: 300;
-  color: #b1b1b1;
+  width: 100px;
+  height: 35px;
+  background: white;
+  transition: 0.3;
+}
+.form__button:hover {
+  color: white;
+  background: #F16D7F;
+}
+.form__confirmation {
+  background: #f5f3f3;
+  width: 360px;
+  height: 214px;
+}
+.form__sub {
+  font-size: 11px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 11px;
+  margin-bottom: 12px;
+  margin-top: 39px;
+  margin-right: 15px;
+}
+.form__total {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: flex-end;
+  gap: 11px;
+  margin-bottom: 21px;
+  margin-right: 15px;
+}
+.form__total__price {
+  color: #F16D7F;
 }
 .form__confirm {
   width: 273px;
@@ -105,37 +237,11 @@
   color: white;
   border: none;
   transition: 0.3;
-  margin-bottom: 96px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
 }
 .form__confirm:hover {
   background: white;
   color: black;
   border: 1px solid black;
-}
-.form__confirm:hover path {
-  fill: black;
-  color: black;
-  border: 1px solid black;
-}
-.form__discription {
-  font-size: 24px;
-  font-weight: 300;
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-  margin-top: -200px;
-}
-
-li {
-  padding-left: 2rem;
-  background-image: url(/hw2.4/img/Vector.svg);
-  background-size: 20px 16px;
-  background-repeat: no-repeat;
-  list-style-type: none;
 }
 
 .top__footer {
