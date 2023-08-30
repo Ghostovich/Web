@@ -1,4 +1,4 @@
-.contents {
+.cart__content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: 145px;
+
 }
 
 .cart {
@@ -92,7 +93,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.form {
+.cart__form {
   display: flex;
   flex-direction: column;
   gap: 57px;
