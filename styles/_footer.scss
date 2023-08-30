@@ -1,4 +1,37 @@
 .footer {
+  &__top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #222224;
+    &__section {
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 104px;
+      margin-bottom: 104px;
+    }
+    &__heading {
+      color: #fbfbfb;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 20px;
+      margin-bottom: 16px;
+    }
+    &__description {
+      color: #fbfbfb;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
   &__main {
     align-content: center;
     position: relative;

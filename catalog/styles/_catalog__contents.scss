@@ -1,0 +1,147 @@
+.content2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 51px;
+}
+
+.h3__content2 {
+  color: #222;
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.p__content2 {
+  color: #9f9f9f;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+.filter-sort {
+  position: relative;
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  position: absolute;
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  &[open] {
+    background: #fff;
+    width: 360px;
+    height: 531px;
+    box-shadow: 6px 4px 35px rbga(0, 0, 0, 0.21);
+    box-sizing: border-box;
+  }
+
+  &[open] .filter__summary {
+    color: $colorSite;
+  }
+
+  &[open] path {
+    fill: $colorSite;
+  }
+
+  &__item {
+    display: flex;
+    position: absolute;
+    &[open] .item__summary {
+      color: $colorSite;
+      list-style-type: none;
+    }
+  }
+
+  &__sorting {
+    margin-left: 320px;
+    display: flex;
+    gap: 27px;
+  }
+}
+
+.item__summary {
+  list-style-type: none;
+}
+
+.blocks__content2 {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  margin-bottom: 128px;
+  margin-top: 65px;
+  grid-template-columns: 360px 360px 360px;
+}
+
+.block__c2 {
+  width: 360px;
+  height: 581px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+}
+
+.p__main__c2 {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-left: 18px;
+}
+
+.p__c2 {
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-left: 18px;
+  width: 315px;
+}
+
+.p__price {
+  color: $colorSite;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-left: 18px;
+}
+
+.img__c2:hover::after {
+  fill: rgba(58, 56, 56, 0.86);
+  content: "Add to Cart";
+}
+
+.img2__c2__div {
+  background-color: #f7e4e2;
+  width: 360px;
+  height: 420px;
+}
+
+.img2__c2 {
+  margin-top: 9px;
+  margin-left: 108px;
+  background-color: #f7e4e2;
+}
