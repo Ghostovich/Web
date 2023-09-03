@@ -261,3 +261,12 @@
     }
   }
 }
+
+@media (max-width:1024px){
+
+.product__tiles{
+  gap: 16px;
+  grid-template-columns: 360px 360px;
+}
+
+}

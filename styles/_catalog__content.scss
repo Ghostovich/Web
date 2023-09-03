@@ -287,3 +287,25 @@
     }
   }
 }
+
+@media (max-width:1024px)
+{
+  .catalog{
+    margin-top: 24px;
+    &__blocks {
+      gap: 16px;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      grid-template-columns: 360px 360px;
+    }
+    &__pages {
+      margin-bottom: 64px;
+    }
+    &__filter-sort {
+      align-items: center;
+    }
+    &__filter {
+      left: -300px;
+    }
+  }
+}

@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   gap: 145px;
-
 }
 
 .cart {
@@ -178,5 +177,24 @@ input::-webkit-inner-spin-button {
     background: white;
     color: black;
     border: 1px solid black;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .cart {
+    margin-top: 0;
+    &__block {
+      width: 734px;
+    }
+    &__content {
+      flex-direction: column;
+      margin-top: 59px;
+    }
+    &__form{
+      flex-direction: row;
+      margin-bottom: 147px;
+    }
+    &__button{}
   }
 }

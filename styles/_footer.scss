@@ -205,3 +205,38 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    &__top {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #222224;
+      padding-bottom: 14px;
+      padding-top: 48px;
+      &__section {
+        margin-top: 0;
+        margin-bottom: 48px;
+    }
+  }
+    &__main {
+      flex-direction: column;
+      gap: 48px;
+      &__quote {
+        flex-direction: column;
+        margin-top: 64px;
+        margin-bottom: 0;
+      }
+
+      &__form {
+        flex-direction: column;
+        margin-bottom: 140px;
+        margin-top: 0;
+      }
+    }
+  }
+}
