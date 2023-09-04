@@ -100,6 +100,14 @@
   fill: #F16D7F;
 }
 
+@media (max-width: 425px) {
+  .nav__cabinet {
+    display: none;
+  }
+  .nav__basket {
+    display: none;
+  }
+}
 .breadcrumbs {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -346,6 +354,40 @@
     flex-direction: column;
     margin-bottom: 140px;
     margin-top: 0;
+  }
+}
+@media (max-width: 425px) {
+  .footer__top {
+    padding-bottom: 31px;
+  }
+  .footer__main {
+    gap: 59px;
+  }
+  .footer__main__quote__part1 {
+    font-size: 18px;
+  }
+  .footer__main__quote__part2 {
+    font-size: 18px;
+  }
+  .footer__main__form {
+    margin-bottom: 110px;
+  }
+  .footer__main__form__input {
+    font-size: 14px;
+  }
+  .footer__main__form__button {
+    font-size: 14px;
+  }
+  .footer__down {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__down__social {
+    margin-top: 43px;
+    margin-bottom: 40px;
+  }
+  .footer__down__rights {
+    margin-bottom: 9px;
   }
 }
 .body {
@@ -925,18 +967,20 @@ input::-webkit-inner-spin-button {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin-top: 51px;
 }
 .catalog__filter-sort {
-  position: relative;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .catalog__filter {
   display: flex;
   gap: 11px;
   align-items: center;
   position: absolute;
-  left: -350px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1007,6 +1051,7 @@ input::-webkit-inner-spin-button {
 .catalog__sorting {
   display: flex;
   gap: 27px;
+  margin-top: 40px;
 }
 .catalog__list__trending__summary {
   display: flex;
@@ -1197,9 +1242,6 @@ input::-webkit-inner-spin-button {
   }
   .catalog__filter-sort {
     align-items: center;
-  }
-  .catalog__filter {
-    left: -300px;
   }
 }
 .index__top {
@@ -1518,6 +1560,60 @@ input::-webkit-inner-spin-button {
     gap: 16px;
     margin-top: 73px;
     grid-template-columns: 360px 360px;
+  }
+}
+@media (max-width: 425px) {
+  .index__top__image {
+    display: none;
+  }
+  .index__top__heading {
+    height: 363px;
+    text-align: center;
+  }
+  .index__top__head {
+    font-size: 20px;
+    width: 263px;
+  }
+  .index__top__head__brand {
+    font-size: 38px;
+    width: 236px;
+  }
+  .index__news {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  .index__news__for_women {
+    width: 343px;
+    height: 247px;
+    gap: 32px;
+  }
+  .index__news__for_men {
+    width: 343px;
+    height: 247px;
+  }
+  .index__news__for_kids {
+    width: 343px;
+    height: 247px;
+  }
+  .index__news__accesories {
+    width: 343px;
+    height: 111px;
+  }
+  .index__blocks__browse {
+    margin-top: 40px;
+    margin-bottom: 96px;
+  }
+  .index__blocks__heading {
+    margin-bottom: 3px;
+  }
+  .index__block__box {
+    display: grid;
+    gap: 16px;
+    margin-top: 64px;
+    grid-template-columns: 360px;
   }
 }
 * {

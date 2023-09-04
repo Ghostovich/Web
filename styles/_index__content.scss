@@ -332,3 +332,70 @@
     grid-template-columns: 360px 360px;
   }
 }
+
+@media (max-width: 425px) {
+  .index__top {
+    &__image {
+      display: none;
+    }
+    &__heading {
+      height: 363px;
+      text-align: center;
+    }
+    &__head {
+      font-size: 20px;
+      width: 263px;
+      &__brand {
+        font-size: 38px;
+        width: 236px;
+      }
+    }
+  }
+
+  .index__news {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    &__for_women {
+      width: 343px;
+      height: 247px;
+      gap: 32px;
+    }
+
+    &__for_men {
+      width: 343px;
+      height: 247px;
+    }
+
+    &__for_kids {
+      width: 343px;
+      height: 247px;
+    }
+
+    &__accesories {
+      width: 343px;
+      height: 111px;
+    }
+  }
+
+  .index__blocks {
+    &__browse {
+      margin-top: 40px;
+      margin-bottom: 96px;
+    }
+    &__heading{
+      margin-bottom: 3px;
+    }
+  }
+
+  .index__block__box {
+    display: grid;
+    gap: 16px;
+    margin-top: 64px;
+    grid-template-columns: 360px;
+  }
+}
+
+

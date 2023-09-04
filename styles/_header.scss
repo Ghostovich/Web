@@ -42,7 +42,6 @@
 
 .menu {
   width: 232px;
-  // при адаптиве 100%
   padding: 32px;
   background: #fff;
   position: absolute;
@@ -113,3 +112,11 @@
   fill: $colorSite;
 }
 
+@media(max-width:425px){
+  .nav__cabinet{
+    display: none;
+  }
+  .nav__basket{
+    display: none;
+  }
+}

@@ -5,19 +5,20 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin-top: 51px;
 
   &__filter-sort {
-    position: relative;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
-
   &__filter {
     display: flex;
     gap: 11px;
     align-items: center;
     position: absolute;
-    left: -350px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -70,7 +71,7 @@
       transition: 0.3s;
     }
 
-    &__item__summary:hover{
+    &__item__summary:hover {
       color: $colorSite;
     }
     &__item__sub_ul {
@@ -96,6 +97,7 @@
   &__sorting {
     display: flex;
     gap: 27px;
+    margin-top: 40px;
   }
 
   &__list__trending {
@@ -288,9 +290,8 @@
   }
 }
 
-@media (max-width:1024px)
-{
-  .catalog{
+@media (max-width: 1024px) {
+  .catalog {
     margin-top: 24px;
     &__blocks {
       gap: 16px;
@@ -304,8 +305,9 @@
     &__filter-sort {
       align-items: center;
     }
-    &__filter {
-      left: -300px;
-    }
   }
 }
+
+// @media (max-width: 425px) {
+
+// }
