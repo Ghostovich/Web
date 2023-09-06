@@ -992,6 +992,21 @@ input::-webkit-inner-spin-button {
   list-style-type: none;
 }
 
+@media (max-width: 425px) {
+  .registration__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .registration__form {
+    margin-left: 9px;
+  }
+  .registration__form__discription {
+    margin-top: 0;
+  }
+  .registration__form__confirm {
+    margin-left: 0;
+  }
+}
 .breadcrumbs__product {
   padding-top: 60px;
   padding-bottom: 60px;

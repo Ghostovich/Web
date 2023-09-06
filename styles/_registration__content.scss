@@ -82,3 +82,21 @@
     list-style-type: none;
   }
 }
+
+@media (max-width: 425px) {
+  .registration__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .registration__form {
+    margin-left: 9px;
+    &__discription {
+      margin-top: 0;
+    }
+
+    &__confirm{
+      margin-left: 0;
+    }
+  }
+}
