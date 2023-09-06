@@ -223,6 +223,10 @@
       font-weight: 400;
       margin-top: 25px;
       margin-left: 18px;
+      transition: 0.3s;
+    }
+    &__heading:hover {
+      color: $colorSite;
     }
     &__description {
       color: #5d5d5d;

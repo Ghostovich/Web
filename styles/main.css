@@ -839,6 +839,10 @@ input::-webkit-inner-spin-button {
 .product__tile__heading {
   margin-top: 25px;
   margin-left: 18px;
+  transition: 0.3s;
+}
+.product__tile__heading:hover {
+  color: #F16D7F;
 }
 .product__tile__details {
   font-weight: 300;
@@ -1273,6 +1277,10 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   margin-top: 25px;
   margin-left: 18px;
+  transition: 0.3s;
+}
+.catalog__block__heading:hover {
+  color: #F16D7F;
 }
 .catalog__block__description {
   color: #5d5d5d;
@@ -1589,6 +1597,10 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   margin-top: 25px;
   margin-left: 18px;
+  transition: 0.3s;
+}
+.index__block__heading:hover {
+  color: #F16D7F;
 }
 .index__block__description {
   color: #5d5d5d;
