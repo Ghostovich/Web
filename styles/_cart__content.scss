@@ -181,7 +181,6 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1024px) {
-
   .cart {
     margin-top: 0;
     &__block {
@@ -191,10 +190,52 @@ input::-webkit-inner-spin-button {
       flex-direction: column;
       margin-top: 59px;
     }
-    &__form{
+    &__form {
       flex-direction: row;
       margin-bottom: 147px;
     }
-    &__button{}
+  }
+}
+
+@media (max-width: 425px) {
+  .cart {
+    gap: 30px;
+    align-items: center;
+    &__content {
+      margin-top: 39px;
+    }
+    &__block {
+      width: 358px;
+      height: 188px;
+      gap: 17px;
+      &__image {
+        width: 143.859px;
+        height: 188px;
+      } 
+    }
+    &__heading {
+      font-size: 16px;
+      gap: 31px;
+    }
+    &__description {
+      font-size: 14px;
+      padding-bottom: 0;
+    }
+    &__buttons{
+      gap: 9px;
+      margin-top: 0;  
+     
+    }
+    &__button{
+      width: 175px;
+      font-size: 12px;
+      margin-bottom: 108px;
+    }
+
+    &__form{
+      flex-direction: column;
+      gap: 48px;
+      margin-bottom: 96px;
+    }
   }
 }

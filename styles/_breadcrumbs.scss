@@ -16,3 +16,12 @@
     color: black;
   }
 }
+
+@media (max-width: 425px) {
+  .breadcrumbs{
+    &__heading{
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+}
